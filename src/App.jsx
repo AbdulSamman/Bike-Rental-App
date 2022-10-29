@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Data from "./components/Data/Data";
 import "./App.scss";
 
