@@ -16,8 +16,6 @@ const Data = () => {
         // const _bikeRental =await axios.get(bikeRentalUrl).data.networks
         const response = await (await fetch(bikeRentalUrl)).json();
         const _bikeRental = response.networks;
-        console.log(_bikeRental);
-        //console.log(_bikeRental);
         if (!_bikeRental) throw new Error("Data not found");
 
         setBikeRental(_bikeRental);
@@ -43,8 +41,6 @@ const Data = () => {
     let _marker = e.payload[0];
     let _textMsg = e.anchor;
     let _textMsgLocation = e.payload[1];
-
-    console.log(_textMsgLocation);
 
     if (_marker == null) {
       _marker = e.payload[0];
