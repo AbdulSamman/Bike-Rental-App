@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: rgb(102, 96, 96);
+  font-family: sans-serif;
+  padding: 0 0.5rem;
+  color: #fff;
+
+  .App {
+    h1 {
+      font-size: 2.5rem;
+      color: goldenrod;
+    }
+  }
+}

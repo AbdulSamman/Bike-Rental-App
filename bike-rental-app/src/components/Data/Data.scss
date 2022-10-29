@@ -1,0 +1,82 @@
+.bikeRentalContainer {
+    height: 340px;
+    padding: 5px;
+    overflow-y: scroll;
+    background-color: rgba(170, 162, 162, 0.26);
+    border-radius: 5px;
+
+    #content {
+        padding: 5px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        box-shadow: rgba(34, 33, 33, 0.651) 0px 3px 8px;
+        text-decoration: none;
+        #bikeName {
+            font-weight: bold;
+            color: lightblue;
+        }
+        #bikeCity {
+            color: orange;
+            font-weight: bold;
+        }
+        #bikeCountry {
+            color: rgb(255, 218, 151);
+        }
+    }
+}
+#content:hover {
+    box-shadow: rgba(34, 33, 33, 0.651) 0px 3px 8px inset, rgba(34, 33, 33, 0.651) 0px 3px 8px inset;
+}
+#search {
+    margin: 1rem 0;
+}
+.fa-location-dot {
+    color: red;
+    padding-right: 2px;
+}
+
+.map-overlay {
+    text-align: center;
+    #marker {
+        color: red;
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    }
+}
+
+.bikeRentalContainer::-webkit-scrollbar {
+    width: 15px; /* width of the entire scrollbar */
+}
+
+.bikeRentalContainer::-webkit-scrollbar-thumb {
+    background-color: rgba(231, 169, 13, 0.479); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    height: 60px;
+
+    //border: 3px solid orange; /* creates padding around scroll thumb */
+}
+.bikeRentalContainer::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(218, 165, 32);
+}
+
+@media (max-width: 767px) {
+    #content {
+        #bikeName {
+            font-weight: bold;
+
+            word-break: break-all;
+            width: max-content;
+            padding-right: 5px;
+        }
+        #bikeCity {
+            font-weight: bold;
+            width: 48%;
+            text-align: end;
+            word-break: break-all;
+        }
+    }
+    #search {
+        width: 100%;
+    }
+}
